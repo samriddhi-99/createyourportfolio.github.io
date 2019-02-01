@@ -1,0 +1,154 @@
+/*.cardcss3{
+	padding: 10px!important;
+	border: 3px solid #2196f3;
+}*/
+.cardcss2{
+	
+	border: 3px solid #2196f3;
+}
+.rowpos{
+	height: 100%!important;
+	vertical-align: middle!important;
+}
+.fixclr{
+	color: #1565c0;
+}
+.arrowalign{
+	padding-right: 0px!important;
+	
+	
+}
+.bb{
+	border:2px solid black;
+}
+#firstrow{
+	background-color: #2196f3;
+	padding: 5px!important;
+	border-radius: 5px;
+	box-shadow: 5px 5px 8px 1px #888888;
+}
+#imgcss{	
+	height: 100%;
+	border-radius: 50%;
+
+	
+
+}
+.normalheadings{
+	font-family: Tahoma;
+	font-size: 25px;
+}
+
+.img-wrap {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+
+div > img {
+	
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+
+.headings{
+	text-align: center;
+	font-family: Verdana;
+	text-shadow: 2px 2px 8px #607d8b;
+}
+#name{
+	font-family: Impact;
+	font-size: 40px;
+	
+}
+#yourtitle{
+	font-family: Tahoma;
+	font-size: 25px;
+	
+
+}
+#me{
+	font-family: Verdana;
+	color: #263238;
+
+}
+.skillmargin{
+	margin: 5px!important;
+}
+#body1{
+	background-color: #cfd8dc;
+	border: 6px solid #e3f2fd;
+}
+
+.checked {
+  color: #039be5;
+
+}
+.card{
+	border-radius: 5px!important;
+	padding: 5px!important;
+}
+.eachlang{
+	font-family: Tahoma;
+	font-size: 30px;
+}
+.sizeic{
+
+	width: 30px!important;
+}
+.cardcss{
+	border-radius: 5px!important;
+}
+.sizeic2{
+	font-size: 30px;
+}
+.eachcon{
+	font-family: Tahoma;
+	font-size: 20px;
+}
+/*
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50!important;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+*/

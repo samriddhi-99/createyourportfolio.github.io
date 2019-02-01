@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Form</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="formcss.css"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      
+</head>
+<body>
+<div id="myform">
+<div id="name">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12 ">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h3 class="fixclr">Hello!!!</h3>
+				<h5 class="fixclr">What's your name?</h5>
+				<div class="input-field">
+		          <input id="name11" type="text" class="validate" ng-model="name55" placeholder="Your name">
+		        </div>
+		       
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rname90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="pic" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12 ">
+			<div class="">
+				<div class="card-panel cardcss2">
+				
+				<h5 class="fixclr">Share your picture here!</h5>
+				<div class="input-field">
+		          <input id="name11" type="text" class="validate" ng-model="pic55" placeholder="Add a link to your picture">
+		        </div>
+		       
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="lpic90"><i class="material-icons">arrow_back</i></a>
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rpic90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="des1" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				
+				<h5 class="fixclr">Describe yourself!</h5>
+				<div class="input-field">
+		          <input id="title55" type="text" placeholder="Title" class="validate" ng-model="title555">
+		        </div>
+				<div class="input-field">
+		          <textarea id="des2" placeholder="Description" class="materialize-textarea" ng-model="titledes55"></textarea>
+		          
+		        </div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="ldes190"><i class="material-icons">arrow_back</i></a>
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rdes190"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="workexp" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">Do have any Work Experience?</h5>
+				<div id="workip">
+				<div class="input-field">
+		          <input placeholder="Place of Work" id="name11" type="text" class="validate" ng-model="exp1">
+		        </div>
+		        <div class="input-field">
+		          <textarea id="project" placeholder="Your Role" class="materialize-textarea" ng-model="expd1"></textarea>
+		          
+		        </div>
+		    	</div>
+		         <div class="row">
+		    		<center>
+		    			<a class="btn-floating btn-large waves-effect waves-light blue" id="addworkexp"><i class="material-icons">add</i></a>
+		    		</center>
+		    	</div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="lworkexp90"><i class="material-icons">arrow_back</i></a>
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rworkexp90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div id="projects" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">Tell Me About Your Project!</h5>
+				<div id="proip">
+				<div class="input-field">
+		          <input placeholder="Project Name" id="name11" type="text" class="validate" ng-model="pro1">
+		        </div>
+		        <div class="input-field">
+		          <textarea id="project" placeholder="Project Description" class="materialize-textarea" ng-model="prod1"></textarea>
+		          
+		        </div>
+		        <div class="input-field">
+		          <input placeholder="Project Link (Optional)" id="name11" type="text" class="validate" ng-model="prol1">
+		        </div>
+		    	</div>
+		        <div class="row">
+		    		<center>
+		    			<a class="btn-floating btn-large waves-effect waves-light blue" id="addpro"><i class="material-icons">add</i></a>
+		    		</center>
+		    	</div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="lprojects90"><i class="material-icons">arrow_back</i></a>
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rprojects90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="academic" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">What Are Your Qualifications?</h5>
+				<div id="acaip">
+				<div class="input-field">
+		          <input placeholder="Study Program" id="name11" type="text" class="validate" ng-model="qua1">
+		        </div>
+		        <div class="input-field">
+		          <textarea id="project" placeholder="Institue/Place Of Education" class="materialize-textarea" ng-model="quad1"></textarea>
+		        </div>
+		        <div class="input-field">
+		          <input placeholder="CGPA or Percentage" id="name11" type="text" class="validate" ng-model="quam1">
+		        </div>
+		    	</div>
+		        <div class="row">
+		    		<center>
+		    			<a class="btn-floating btn-large waves-effect waves-light blue" id="addaca"><i class="material-icons">add</i></a>
+		    		</center>
+		    	</div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="lacademic90"><i class="material-icons">arrow_back</i></a>
+        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="racademic90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="achievements" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">What Are Your Achievements?</h5>
+				<div id="achip">
+				<div class="input-field">
+		          <input placeholder="Achievement Name" id="name11" type="text" class="validate" ng-model="achtitle">
+		        </div>
+		        <div class="input-field">
+		          <textarea id="project" placeholder="Description" class="materialize-textarea" ng-model="achdes"></textarea>		          
+		        </div>
+		    </div>
+		        <div class="row">
+		    		<center>
+		    			<a class="btn-floating btn-large waves-effect waves-light blue" id="addach"><i class="material-icons">add</i></a>
+		    		</center>
+		    	</div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="lachievements90"><i class="material-icons">arrow_back</i></a>
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rachievements90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="skills" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">What Are Your Skills?</h5>
+				<div id="skiip">
+				<div class="row">
+				<div class="input-field col l6 m6 s12">
+		          <input placeholder="Skill" id="name11" type="text" class="validate" ng-model="sk1">
+		        </div>
+		        <div class="input-field col l6 m6 s12">
+		          <input placeholder="Skill" id="name11" type="text" class="validate" ng-model="sk2">
+		        </div>
+		    	</div>
+		    	</div>
+		    	
+		    	<div class="row">
+		    		<center>
+		    			<a class="btn-floating btn-large waves-effect waves-light blue" id="addskill"><i class="material-icons">add</i></a>
+		    		</center>
+		    	</div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="lskills90"><i class="material-icons">arrow_back</i></a>
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rskills90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="languages" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">Languages you know...</h5>
+				<div class="row">
+					<div id="lgip">
+				<div class="input-field col l6 m6 s12">
+		          <input placeholder="Language" id="name11" type="text" class="validate" ng-model="lg1">
+		        </div>
+		        <div class="input-field col l6 m6 s12">
+		          <input placeholder="How fluent are you? Rate out of 5!" id="lg111" type="text" class="validate" ng-model="rate">
+		        </div>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<center>
+		    			<a class="btn-floating btn-large waves-effect waves-light blue" id="addlg"><i class="material-icons">add</i></a>
+		    		</center>
+		    	</div>
+		        <a class="btn-floating btn-large waves-effect waves-light blue" id="llanguages90"><i class="material-icons">arrow_back</i></a>
+		        
+		        <a class="btn-floating btn-large waves-effect waves-light blue arrowalign" id="rlanguages90"><i class="material-icons">arrow_forward</i></a>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contact" style="display: none;">
+	<div class="row rowpos">
+		<div class="col l3 m2"></div>
+		<div class="col l6 m8 s12">
+			<div class="">
+				<div class="card-panel cardcss2">
+				<h5 class="fixclr">How can I contact you?</h5>
+				<div class="row">
+				<div class="input-field col l6 m6 s12">
+		          <input placeholder="Phone Number" id="name11" type="number" class="validate" ng-model="num111">
+		        </div>
+		        <div class="input-field col l6 m6 s12">
+		          <input placeholder="Email Id" id="name11" type="Email" class="validate" ng-model="mail111">
+		        </div>
+		    	</div>
+		    	<div class="row">
+				<div class="input-field col l6 m6 s12">
+		          <input placeholder="LinkedIn Profile Link" id="name11" type="text" class="validate" ng-model="link111">
+		        </div>
+		        <div class="input-field col l6 m6 s12">
+		          <input placeholder="Github Profile Link" id="name11" type="text" class="validate" ng-model="git111">
+		        </div>
+		    	</div>	
+		        <div class="row">
+		        	<center>
+		        	<a class="btn-floating btn-large waves-effect waves-light blue" id="lcontact90"><i class="material-icons">arrow_back</i></a>
+		        	<a class="waves-effect waves-light btn-large blue" id="buildport" >Build My Portfolio!</a>
+		        	</center>
+
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="portfoliodone" style="display: none;">
+	<div id="firstrow" class="border row" >
+		<div id="image" class="border col l3 m4 s12"><center><div class="img-wrap"><img src={{pic55}} id="imgcss"></div></center></div>
+		<div id="intro" class="border col l9 m8 s12">
+			<h5 id="name">{{name55}} </h5>
+			<h6 id="yourtitle">{{title555}}</h6>
+			
+			<p id="me">{{titledes55}}
+			</p> 
+		</div>
+	</div>
+	
+	<h3 class="headings">Work Experience</h3>
+	<div id="secondrow" class="border row" >
+		<div id="workop">
+		<div id="col21" class="border col l6 m6 s12">
+			<div class="card white">
+		        <div class="card-content black-text">
+		          <span class="card-title normalheadings">{{exp1}}</span>
+		          <p>
+		        {{expd1}}
+				</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#">This is a link</a>
+		        </div>
+      		</div>
+      	</div>
+      </div>
+	
+	</div>
+	<h3 class="headings">Projects</h3>
+	<div id="thirdrow" class="border row">
+		<div id="proop">
+		<div id="col31" class="border col l6 m6 s12">
+			<div class="card white">
+		        <div class="card-content black-text">
+		          <span class="card-title normalheadings">{{pro1}}</span>
+		          <p>{{prod1}}
+					</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="{{prol1}}">This is a link</a>
+		        </div>
+      		</div>
+		</div>
+		</div>
+		
+	</div>
+	<h3 class="headings">Academic Qualifications</h3>
+	<div id="fourthrow" class="border row">
+		<div id="acaop">
+		<div id="col41" class="border col l6 m6 s12">
+			<div class="card white">
+		        <div class="card-content black-text">
+		          <span class="card-title normalheadings">{{qua1}}</span>
+		          <p>{{quad1}}
+					</p>
+					<p>{{quam1}}
+					</p>
+		        </div>
+		        
+      		</div>
+		</div>
+		</div>
+			
+	</div>
+	<h3 class="headings">Achievments</h3>
+	<div id="fifthrow" class="border row">
+		<div id="achop">
+		<div id="col51" class="border col l12 m12 s12">
+			<div class="card white">
+		        <div class="card-content black-text">
+		          <span class="card-title normalheadings">{{achtitle}}</span>
+		          <p>{{achdes}}
+					</p>
+		        </div>
+		        
+      		</div>
+		</div>
+		</div>
+		
+		
+	</div>
+	<h3 class="headings">Skills</h3>
+	<div class ="row">
+		<div class="col l2 m2"></div>
+		<div class="col l8 m8 s12">
+		<center>
+		  <div id="skiop">
+		  
+		  <a class="waves-effect cyan btn modal-trigger skillmargin">{{sk1}}</a> 
+		  <a class="waves-effect cyan btn modal-trigger skillmargin">{{sk2}}</a>
+		  
+		  
+		  </div>
+		  
+
+		</center>
+		</div>
+	</div>
+	<h3 class="headings">Languages</h3>
+	<div class ="row">
+		<div id="lgop">
+		<div class="col l6 m6 s12 ">
+			<div class="card">
+
+			<span id="lang" class="eachlang">{{lg1}} - </span>
+
+			
+			<span class="eachlang"> {{rate}}/5</span>
+			
+			
+			</div>
+		</div>
+		</div>
+		
+	</div>
+	<h3 class="headings">Contact</h3>
+	<div class ="row">
+		<div class="col l3 m3"></div>
+		<div class="card cardcss col l6 m6 s12">
+		<center>
+		<p class="contact1 eachcon sizeic2"><i class="material-icons ">call</i><a href="tel:{{num111}}"> {{num111}}</a></p>
+		<p class="contact1 eachcon"><a href="{{link111}}"><img class="sizeic" src="icons8-linkedin-208.png"> {{link111}}</a></p>
+		<p class="contact1 eachcon"><a href="{{git111}}"><img class="sizeic" src="icons8-github-52.png"> {{git111}}</a></p>
+		<p class="contact1 eachcon sizeic2"><i class=" material-icons">contact_mail</i><a href="mailto:{{mail111}}" target="_top"> {{mail111}}</a></p>
+		</center>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+	var worki=1;
+	var proi=1;
+	var acai=1;
+	var achi=1;
+	var skii=1;
+	var lgi=1;
+	
+	 $('#buildport').click(function() {
+	 	
+    	$("#myform").hide("slow");
+        $("#portfoliodone").show("slow"); 
+     });
+      $('#rname90').click(function() {
+    	$("#name").hide("slow");
+        $("#pic").show("slow"); 
+     });
+      $('#lpic90').click(function() {
+    	$("#pic").hide("slow");
+        $("#name").show("slow"); 
+     });
+      $('#rpic90').click(function() {
+    	$("#pic").hide("slow");
+        $("#des1").show("slow"); 
+     });
+        $('#ldes190').click(function() {
+    	$("#des1").hide("slow");
+        $("#name").show("slow"); 
+     });
+          $('#rdes190').click(function() {
+    	$("#des1").hide("slow");
+        $("#workexp").show("slow"); 
+     });
+    $('#lworkexp90').click(function() {
+    	$("#workexp").hide("slow");
+        $("#des1").show("slow"); 
+     });
+    $('#rworkexp90').click(function() {
+    	$("#workexp").hide("slow");
+        $("#projects").show("slow"); 
+     });
+    $('#lprojects90').click(function() {
+    	$("#projects").hide("slow");
+        $("#workexp").show("slow"); 
+     });
+    $('#rprojects90').click(function() {
+    	$("#projects").hide("slow");
+        $("#academic").show("slow"); 
+     });
+    $('#lacademic90').click(function() {
+    	$("#academic").hide("slow");
+        $("#projects").show("slow"); 
+     });
+    $('#racademic90').click(function() {
+    	$("#academic").hide("slow");
+        $("#achievements").show("slow"); 
+     });
+    $('#lachievements90').click(function() {
+    	$("#achievements").hide("slow");
+        $("#academic").show("slow"); 
+     });
+     $('#rachievements90').click(function() {
+    	$("#achievements").hide("slow");
+        $("#skills").show("slow"); 
+     });
+    $('#lskills90').click(function() {
+    	$("#skills").hide("slow");
+        $("#achievements").show("slow"); 
+     });
+    $('#rskills90').click(function() {
+    	$("#skills").hide("slow");
+        $("#languages").show("slow"); 
+     });
+    $('#llanguages90').click(function() {
+    	$("#languages").hide("slow");
+        $("#skills").show("slow"); 
+     });
+    $('#rlanguages90').click(function() {
+    	$("#languages").hide("slow");
+        $("#contact").show("slow"); 
+     });
+    $('#lcontact90').click(function() {
+    	$("#contact").hide("slow");
+        $("#languages").show("slow"); 
+     });
+    $('#addworkexp').click(function() {
+    	worki++;
+    	var zzz = '<div class="input-field"><input placeholder="Place of Work '+worki+'" id="name11" type="text" class="validate" ng-model="exp1'+worki+'"> </div><div class="input-field"><textarea id="project" placeholder="Your Role '+worki+'" class="materialize-textarea" ng-model="expd1'+worki+'"></textarea></div>';
+    	$('#workip').append(zzz);
+    	var yyy='	<div id="col21" class="border col l6 m6 s12"><div class="card white"><div class="card-content black-text"><span class="card-title normalheadings">{{exp1'+worki+'}}</span><p> {{expd1'+worki+'}}</p> </div> <div class="card-action"> <a href="#">This is a link</a> </div>	</div> 	</div>';
+    	$('#workop').append(yyy);
+     });
+    $('#addpro').click(function() {
+    	proi++;
+    	var zzz = '<div class="input-field">		          <input placeholder="Project Name '+proi+'" id="name11" type="text" class="validate" ng-model="pro1'+proi+'">		        </div>		        <div class="input-field">		          <textarea id="project" placeholder="Project Description '+proi+'" class="materialize-textarea" ng-model="prod1 '+proi+'"></textarea>		          		        </div>		        <div class="input-field">		          <input placeholder="Project Link '+proi+' (Optional)" id="name11" type="text" class="validate" ng-model="prol1'+proi+'">		        </div>';
+    	$('#proip').append(zzz);
+    	var yyy='	<div id="col31" class="border col l6 m6 s12">			<div class="card white">		        <div class="card-content black-text">		          <span class="card-title normalheadings">{{pro1'+proi+'}}</span>		          <p>{{prod1'+proi+'}}					</p>		        </div>		        <div class="card-action">		          <a href="{{prol1'+proi+'}}">This is a link</a>		        </div>      		</div>		</div>';
+    	$('#proop').append(yyy);
+     });
+ 
+    $('#addaca').click(function() {
+    	acai++;
+    	var zzz = '	<div class="input-field">		          <input placeholder="Study Program '+acai+'" id="name11" type="text" class="validate" ng-model="qua1'+acai+'">		        </div>		        <div class="input-field">		          <textarea id="project" placeholder="Institue/Place Of Education '+acai+'" class="materialize-textarea" ng-model="quad1 '+acai+'"></textarea>		        </div>		        <div class="input-field">		          <input placeholder="CGPA or Percentage" id="name11" type="text" class="validate" ng-model="quam1 '+acai+'">		        </div>';
+    	$('#acaip').append(zzz);
+    	var yyy='	<div id="col41" class="border col l6 m6 s12">			<div class="card white">		        <div class="card-content black-text">		          <span class="card-title normalheadings">{{qua1'+acai+'}}</span>		          <p>{{quad1'+acai+'}}					</p>					<p>{{quam1'+acai+'}}					</p>		        </div>		              		</div>		</div>';
+    	$('#acaop').append(yyy);
+     });
+      $('#addach').click(function() {
+    	achi++;
+    	var zzz = '	<div class="input-field">		          <input placeholder="Achievement Name '+achi+'" id="name11" type="text" class="validate" ng-model="achtitle'+achi+'">		        </div>		        <div class="input-field">		          <textarea id="project" placeholder="Description '+achi+'" class="materialize-textarea" ng-model="achdes '+achi+'"></textarea>		          		        </div>';
+    	$('#achip').append(zzz);
+    	var yyy='	<div id="col51" class="border col l12 m12 s12">			<div class="card white">		        <div class="card-content black-text">		          <span class="card-title normalheadings">{{achtitle'+achi+'}}</span>    			          <p>{{achdes'+achi+'}}					</p>		        </div>		              		</div>		</div>';
+    	$('#achop').append(yyy);
+     });
+      $('#addskill').click(function() {
+    	skii++;
+    	var zzz = '	<div class="row">				<div class="input-field col l6 m6 s12">		          <input placeholder="Skill" id="name11" type="text" class="validate" ng-model="sk1'+skii+'">		        </div>		        <div class="input-field col l6 m6 s12">		          <input placeholder="Skill" id="name11" type="text" class="validate" ng-model="sk2'+skii+'">		        </div>		    	</div>';
+    	$('#skiip').append(zzz);
+    	var yyy='	 <a class="waves-effect cyan btn modal-trigger skillmargin">{{sk1'+skii+'}}</a> 		  <a class="waves-effect cyan btn modal-trigger skillmargin">{{sk2'+skii+'}}</a>		  ';
+    	$('#skiop').append(yyy);
+     });
+       $('#addlg').click(function() {
+    	lgi++;
+    	var zzz = '	<div class="input-field col l6 m6 s12">		          <input placeholder="Language" id="name11" type="text" class="validate" ng-model="lg1'+lgi+'">		        </div>		        <div class="input-field col l6 m6 s12">		          <input placeholder="How fluent are you? Rate out of 5!" id="lg111" type="text" class="validate" ng-model="rate'+lgi+'" >		        </div>';
+    	$('#lgip').append(zzz);
+    	var yyy='	<div class="col l6 m6 s12 ">			<div class="card"> <span id="lang" class="eachlang">{{lg1'+lgi+'}} - </span>						<span class="eachlang"> {{rate'+lgi+'}}/5</span></div>		</div>';
+    	$('#lgop').append(yyy);
+     });
+
+
+
+
+
+</script>
